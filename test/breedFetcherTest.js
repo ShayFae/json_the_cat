@@ -20,12 +20,8 @@ describe('fetchBreedDescription', () => {
 
   it('invalid/non-existent breed is passed in.', (done) => {
     fetchBreedDescription('cat', (err, desc) => {
-      // we expect no error for this scenario
       assert.equal(desc, null);
-
-      const expectedDesc = `Requested ${breedName} was not found`;
-
-      // compare returned description
+      const expectedDesc = undefined;
       assert.equal(expectedDesc);
 
       done();
